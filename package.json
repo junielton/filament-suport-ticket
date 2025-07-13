@@ -4,7 +4,8 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "dev:all": "concurrently \"./vendor/bin/sail up\" \"./vendor/bin/sail npm run dev\""
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
